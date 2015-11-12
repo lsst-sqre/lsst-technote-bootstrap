@@ -2,7 +2,7 @@
 lsst-report-bootstrap
 #####################
 
-Quickly report an LSST tech report that deploys to the web
+Quickly create an LSST tech report that deploys to the web
 ==========================================================
 
 ``lsst-report-bootstrap`` is a template for LSST technical reports that are written in `reStructuredText`_, generated with `Sphinx`_, and deployed to the web with `Read the Docs`_.
