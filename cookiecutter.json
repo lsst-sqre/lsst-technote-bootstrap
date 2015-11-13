@@ -12,6 +12,7 @@
     "docushare_url": "",
     "url": "http://{{ cookiecutter.series.lower() }}-{{ cookiecutter.serial_number }}.lsst.codes",
     "description": "A short description for this report",
+    "release_date": "2015-01-01",
     "copyright_year": "2015",
     "copyright_holder": "AURA/LSST"
 }

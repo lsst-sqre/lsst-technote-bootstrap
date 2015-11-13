@@ -1,0 +1,10 @@
+doc_id: '{{ cookiecutter.series }}-{{ cookiecutter.serial_number }}'
+doc_title: '{{ cookiecutter.title }}'
+copyright: '{{ cookiecutter.copyright_year }}, {{ cookiecutter.copyright_holder }}'
+# Author names, ordered as a list
+authors:
+    - '{{ cookiecutter.first_author }}'
+# Current document version
+last_revised: {{ cookie_cutter.release_date }}
+version: '1.0'
+# dev_version_suffix: None  # e.g. 'alpha'/'beta'/'rc' if necessary
