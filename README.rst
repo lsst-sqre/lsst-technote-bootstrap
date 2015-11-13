@@ -66,7 +66,19 @@ Write the technote in ``index.rst``.
 The markup language of DM is `reStructuredText`_.
 We've written a page on writing reStructuredText for DM that may help you get started: http://docs.lsst.codes/en/latest/development/docs/rst_styleguide.html
 
-You can run ``make html`` and see the generated technote webpage locally at ``_build/html/index.html``.
+To preview your technote, install python dependencies via
+
+.. code-block:: bash
+
+   pip install -r requirements.txt
+
+once, and run
+
+.. code-block:: bash
+
+   make html
+
+to generate the technote webpage locally at ``_build/html/index.html``.
 
 5. Push to GitHub
 -----------------
