@@ -38,7 +38,7 @@ Start a new report project in a convenient directory:
 (Alternatively you can ``git clone`` this repository and run cookiecutter directly on it: ``cookiecutter lsst-report-bootstrap``).
 
 Answer the prompts, and you'll have a brand new report project.
-The prompts are `documented below <config-prompts>`_.
+The prompts are documented below.
 
 ``cd`` into the report's directory and initialize git:
 
