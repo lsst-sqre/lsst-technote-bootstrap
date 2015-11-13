@@ -11,6 +11,11 @@ View this report at {{ cookiecutter.url }}
    {{ cookiecutter.docushare_url|length }}
 {% endif %}
 
+..
+  Uncomment this section and modify the DOI strings to include a Zenodo DOI badge in the README
+  .. image:: https://zenodo.org/badge/doi/10.5281/zenodo.#####.svg
+     :target: http://dx.doi.org/10.5281/zenodo.#####
+
 Build this Report
 =================
 
@@ -32,8 +37,16 @@ You can edit the ``index.rst`` file, which is a reStructuredText document.
 A good primer on reStructuredText is available at http://docs.lsst.codes/en/latest/development/docs/rst_styleguide.html
 
 Remember that images and other types of assets should be stored in the ``_static/`` directory of this repository.
+See ``_static/README.rst`` for more information.
 
-The published report at {{ cookiecutter.docushare_url }} will be automatically rebuilt whenever you push your changes to the ``master`` branch on `GitHub <https://github.com/{{ cookiecutter.github_namespace }}`_.
+The published report at {{ cookiecutter.url }} will be automatically rebuilt whenever you push your changes to the ``master`` branch on `GitHub <https://github.com/{{ cookiecutter.github_namespace }}`_.
+
+Updating Metadata
+=================
+
+Report metadata is maintained in ``metadata.yaml``.
+In this metadata you can edit the report's title, authors, publication date, etc..
+``metadata.yaml`` is self-documenting with inline comments.
 
 ****
 
