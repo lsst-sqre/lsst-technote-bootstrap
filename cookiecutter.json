@@ -3,7 +3,7 @@
     "series": ["SQR",
                "DMTN"],
     "serial_number": "000",
-    "title": "Report Title",
+    "title": "Document Title",
     "repo_name": "{{ cookiecutter.series.lower() }}-{{ cookiecutter.serial_number }}",
     "github_org": ["lsst",
                    "lsst-dm",
@@ -11,7 +11,7 @@
     "github_namespace": "{{ cookiecutter.github_org }}/{{ cookiecutter.repo_name }}",
     "docushare_url": "",
     "url": "http://{{ cookiecutter.series.lower() }}-{{ cookiecutter.serial_number }}.lsst.codes",
-    "description": "A short description for this report",
+    "description": "A short description of this document",
     "release_date": "2015-01-01",
     "copyright_year": "2015",
     "copyright_holder": "AURA/LSST"
