@@ -132,12 +132,15 @@ Here is some guidance on what metadata to add:
 - **Types(s) of Files**: 'Publication'.
 - **Publication type**: 'Technical note'.
 - **Publication date**: Date of publication, or today.
-- **Title**: Use the 'Series-Serial: tag format'. E.g. 'SQR-001 v1.0'.
+- **Title**: Use the '{{series}}-{{serial} {{tag}} {{title}}' format. E.g. 'SQR-001 v1.0 The LSST DM Technical Note Publishing System'.
 - **Authors**: List all authors (matching ``metadata.yaml``) and their affiliations. You may need to manually add authors that aren't in the git history.
+- **Description**: A short summary or abstract of the document.
 - **Keywords**: Add the 'lsst' keyword. Also add a keyword for the technote series, such as 'lsst-sqr' for 'SQR-NNN' technotes.
+- **Additional notes**: Add the text ``View this document online at http://sqr-000.lsst.io`` (replacing your document's URL as appropriate).
 - **License**: 'Creative Commons Attribution'
 - **Access Rights**: 'Open Access'
 - **Communities**: 'Large Synoptic Survey Telescope Data Management'
+- **Related/alternate identifiers**: In addition to the GitHub URL provided by default, add the document's published URL and annotate that URL as "is compiled/created by this upload."
 
 Note that the 'Large Synoptic Survey Telescope Data Management' collection (`lsst-dm`_) organizes DM technotes to provide additional visibility.
 
