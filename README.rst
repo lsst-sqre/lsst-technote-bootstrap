@@ -152,6 +152,13 @@ In your ``README.rst``, uncomment the markup for the DOI badge (updating it with
 
 .. _Zenodo: http://zenodo.org
 
+8. Publishing the tagged document
+---------------------------------
+
+When you create a GitHub Release for Zenodo, it's good practice to publish that tag on Read the Docs and have that tag linked from the Zenodo deposition page.
+
+1. Go on Read the Docs and add the tag as a built *version* (if Jonathan Sick created the Read the Docs project for you, let him know and he'll do this for you)
+2. On Zenodo, find your uploaded document and **Edit** the metadata to point to the URL for the tagged version on Read the Docs, for example http://sqr-000.lsst.io/en/v1.0/ Re-submit the deposition. Only the metadata will be updated, the DOI will remain the same.
 
 .. _config-prompts:
 
