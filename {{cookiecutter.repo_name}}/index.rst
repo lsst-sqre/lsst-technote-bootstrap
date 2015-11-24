@@ -37,4 +37,6 @@
 
    Feel free to delete this instructional comment.
 
+:tocdepth: 1
+
 Write the docs; right here.
