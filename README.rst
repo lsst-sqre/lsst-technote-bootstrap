@@ -7,6 +7,8 @@ Write technotes that are native to the web
 
 ``lsst-technote-bootstrap`` is a template for LSST technical notes that are written in `reStructuredText`_, generated with `Sphinx`_, and deployed to the web with `Read the Docs`_.
 
+For background on the DM technote platform, see `SQR-000 <http://sqr-000.lsst.io>`_.
+
 .. _reStructuredText: http://sphinx-doc.org/rest.html
 .. _Sphinx: http://sphinx-doc.org
 .. _Read the Docs: http://readthedocs.org
@@ -101,7 +103,8 @@ LSST technotes are continuously distributed (published) to the web using http://
 To publish to `Read the Docs`_, let Jonathan Sick (jsick at lsst org) know, and he will
 
 1. Create a `Read the Docs`_ project, and
-2. Create an ``lsst.codes`` url for the technote.
+2. Create an ``lsst.io`` url for the technote.
+3. Create a Travis CI test for Sphinx builds
 
 This is a one-time step for each technote.
 Whenever you push changes to your ``master`` branch on GitHub, the generated technote on `Read the Docs`_ will be automatically updated.
