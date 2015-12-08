@@ -10,7 +10,7 @@
                    "lsst-sqre"],
     "github_namespace": "{{ cookiecutter.github_org }}/{{ cookiecutter.repo_name }}",
     "docushare_url": "",
-    "url": "http://{{ cookiecutter.series.lower() }}-{{ cookiecutter.serial_number }}.lsst.codes",
+    "url": "http://{{ cookiecutter.series.lower() }}-{{ cookiecutter.serial_number }}.lsst.io",
     "description": "A short description of this document",
     "release_date": "2015-01-01",
     "copyright_year": "2015",
