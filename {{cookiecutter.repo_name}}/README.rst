@@ -4,7 +4,10 @@
 
 {{ cookiecutter.description }}
 
-View this technote at {{ cookiecutter.url }}
+View this technote at {{ cookiecutter.url }} or see a preview of the
+current version in `this repo`_
+
+.. _this repo: ./index.rst
 
 {% if cookiecutter.docushare_url|length > 0 %}
    An authoritative version of this document is also available in LSST's Docushare: {{ cookiecutter.docushare_url }}
