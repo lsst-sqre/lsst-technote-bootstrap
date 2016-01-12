@@ -49,7 +49,7 @@ The prompts are documented below in this README.
 
    cd {{repo_name}}
    git init .
-   git add *
+   git add --all
    git commit -m "Init technote"
 
 3. Customize the technote's Metadata and README
