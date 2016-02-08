@@ -66,7 +66,7 @@ You can also edit the README.rst to give additional cues to readers/authors view
 
 Write the technote in ``index.rst``.
 The markup language of DM is `reStructuredText`_.
-We've written a page on writing reStructuredText for DM that may help you get started: http://docs.lsst.codes/en/latest/development/docs/rst_styleguide.html
+We've written a page on writing reStructuredText for DM that may help you get started: http://developer.lsst.io/en/latest/docs/rst_styleguide.html
 
 To preview your technote, install python dependencies via
 
@@ -195,7 +195,7 @@ Note that errors when entering `cookiecutter`_ prompts can be easily fixed by ed
 
 ****
 
-Copyright 2015 AURA/LSST
+Copyright 2015-2016 AURA/LSST
 
 `lsst-technote-bootstrap` is open source (MIT license).
 
