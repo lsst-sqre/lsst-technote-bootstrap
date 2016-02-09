@@ -94,6 +94,8 @@ Official, change-controlled documents (LDM, LSE, etc.) go in the main https://gi
 
 Ensure that the ``github_namespace`` you provided at the ``cookiecutter`` prompt matches the technote's name and organization on GitHub.
 
+When you're creating the GitHub repository, make an empty project; you've already created the README, LICENSE and gitignore files locally.
+
 The repo's GitHub summary line should correspond to the technote's title and the homepage should be the URL of the published technote.
 
 6. Publish with Read the Docs
