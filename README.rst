@@ -41,7 +41,7 @@ Run this command (verbatim):
 (Alternatively you can ``git clone`` this repository and run cookiecutter directly on it: ``cookiecutter lsst-technote-bootstrap``).
 
 Answer the prompts, and you'll have a brand new technote project.
-The prompts are documented below in this README.
+:ref:`The prompts are documented below <config-prompts>`.
 
 ``cd`` into the technote's directory and initialize git:
 
@@ -86,11 +86,12 @@ to generate the technote webpage locally at ``_build/html/index.html``.
 -----------------
 
 The technote should be published on GitHub.
-Which organization you place the technote in depends on the document's series.
+Which organization you place the technote in depends on the document's series:
 
-SQuaRE technical notes (SQR series) go in https://github.com/lsst-sqre.
-DM technical notes (DMTN series) go in https://github.com/lsst-dm.
-Official, change-controlled documents (LDM, LSE, etc.) go in the main https://github.com/lsst organization.
+- SQuaRE technical notes (SQR series) go in https://github.com/lsst-sqre.
+- DM technical notes (DMTN series) go in https://github.com/lsst-dm.
+- Simulations Group technical notes (SMTN series) go in https://github.com/lsst-sims.
+- Official, change-controlled documents (LDM, LSE, etc.) go in the main https://github.com/lsst organization.
 
 Ensure that the ``github_namespace`` you provided at the ``cookiecutter`` prompt matches the technote's name and organization on GitHub.
 
@@ -178,14 +179,15 @@ This section describes the content expected by the prompts when running `cookiec
 
   - ``SQR`` for SQuaRE technical notes
   - ``DMTN`` for Data Management technical notes
+  - ``SMTN`` for Simulations Group technical notes
 
 - ``serial_number``: the serial number. Use three digits padded with zeros.
 - ``title``: Title of the technote.
 - ``github_org``: The GitHub organization where this technote resides, which can be
 
-  - ``lsst`` for change-controlled documents
   - ``lsst-dm`` for the DM DMTN series
   - ``lsst-sqre`` for the SQuaRE SQR series
+  - ``lsst-sims`` for the Simulations Group's SMTN series
 
 - ``github_namespace``: This is the expected GitHub URL of the technote, minus the 'github.com/' prefix. For example, ``lsst-sqre/sqr-000``.
 - ``docushare_url``: The URL of the technote on Docushare, if the canonical version is stored there. If Docushare is not used, leave this field blank.

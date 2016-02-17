@@ -2,7 +2,7 @@
 # to build the document and index it. It should be maintained alongside the
 # document in git and kept up to date.
 
-# The series identifier. E.g. SQR, DMTN, LDM, LSE, etc.
+# The series identifier. E.g. SQR, DMTN, SMTN, LDM, LSE, etc.
 series: '{{ cookiecutter.series }}'
 
 # Document number, as a string. It should be three digits, padded with leading zeros
