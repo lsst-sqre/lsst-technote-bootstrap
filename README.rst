@@ -5,13 +5,13 @@ lsst-technote-bootstrap
 Write technotes that are native to the web
 ==========================================
 
-``lsst-technote-bootstrap`` is a template for LSST technical notes that are written in `reStructuredText`_, generated with `Sphinx`_, and deployed to the web with `Read the Docs`_.
+``lsst-technote-bootstrap`` is a template for LSST technical notes that are written in `reStructuredText`_, generated with `Sphinx`_, and deployed to the web with `LSST the Docs`_.
 
 For background on the DM technote platform, see `SQR-000 <http://sqr-000.lsst.io>`_.
 
 .. _reStructuredText: http://sphinx-doc.org/rest.html
 .. _Sphinx: http://sphinx-doc.org
-.. _Read the Docs: http://readthedocs.org
+.. _LSST the Docs: http://sqr-006.lsst.io
 
 Quick Start
 ===========
@@ -99,20 +99,19 @@ When you're creating the GitHub repository, make an empty project; you've alread
 
 The repo's GitHub summary line should correspond to the technote's title and the homepage should be the URL of the published technote.
 
-6. Publish with Read the Docs
+6. Publish with LSST the Docs
 -----------------------------
 
-LSST technotes are continuously distributed (published) to the web using http://readthedocs.org.
-To publish to `Read the Docs`_, let Jonathan Sick (jsick at lsst org) know, and he will
+LSST technotes are continuously distributed (published) to the web using Travis CI and LSST the Docs.
+To publish to `LSST the Docs`_, let Jonathan Sick (jsick at lsst org) know, and he will
 
-1. Create a `Read the Docs`_ project, and
-2. Create an ``lsst.io`` url for the technote.
-3. Create a Travis CI test for Sphinx builds
+1. Create a `LSST the Docs`_ project, and
+2. Create a Travis CI configuration for Sphinx builds
 
 This is a one-time step for each technote.
-Whenever you push changes to your ``master`` branch on GitHub, the generated technote on `Read the Docs`_ will be automatically updated.
 
-We *do* plan to make this even easier by automatically provisioning Read the Docs projects via an API.
+Now whenever you push new commits to any branch, your versioned technote will be viewable from your technote's subdomain of ``*.lsst.io``.
+See `SQR-006 <https://sqr-006.lsst.io/#versioned-documentation-urls>`__ for details on versioned URLs in LSST the Docs.
 
 7. Get a DOI with Zenodo
 ------------------------
