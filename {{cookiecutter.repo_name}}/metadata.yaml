@@ -22,7 +22,7 @@ authors:
 # Current document revision date, YYYY-MM-DD
 # Only set this field if you need to manually fix the revision date;
 # the revision date is obtained from the HEAD Git commit otherwise.
-# last_revised: '{{ cookiecutter.release_date }}'
+# last_revised: 'YYYY-MM-DD'
 
 # Version. Use Semvar, e.g., 1.0, including .dev, as necessary
 # This version string should correspond to the git tag when the document is published on Zenodo
