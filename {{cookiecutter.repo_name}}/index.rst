@@ -1,7 +1,7 @@
 ..
-  Content of technical report.
+  Technote content.
 
-  See http://docs.lsst.codes/en/latest/development/docs/rst_styleguide.html
+  See https://developer.lsst.io/docs/rst_styleguide.html
   for a guide to reStructuredText writing.
 
   Do not put the title, authors or other metadata in this document;
@@ -32,7 +32,7 @@
      Caption text.
 
    Run: ``make html`` and ``open _build/html/index.html`` to preview your work.
-   See the README at https://github.com/lsst-sqre/lsst-report-bootstrap or
+   See the README at https://github.com/lsst-sqre/lsst-technote-bootstrap or
    this repo's README for more info.
 
    Feel free to delete this instructional comment.
