@@ -13,7 +13,7 @@
                    "lsst"],
     "github_namespace": "{{ cookiecutter.github_org }}/{{ cookiecutter.repo_name }}",
     "docushare_url": "",
-    "url": "http://{{ cookiecutter.series.lower() }}-{{ cookiecutter.serial_number }}.lsst.io",
+    "url": "https://{{ cookiecutter.series.lower() }}-{{ cookiecutter.serial_number }}.lsst.io",
     "description": "A short description of this document",
     "copyright_year": "2016",
     "copyright_holder": "AURA/LSST"
