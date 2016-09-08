@@ -1,3 +1,12 @@
+.. image:: https://img.shields.io/badge/{{ cookiecutter.repo_name|replace("-", "--") }}-lsst.io-brightgreen.svg
+   :target: {{ cookiecutter.url }}
+.. image:: https://travis-ci.org/{{ cookiecutter.github_namespace }}.svg
+   :target: https://travis-ci.org/{{ cookiecutter.github_namespace }}
+..
+  Uncomment this section and modify the DOI strings to include a Zenodo DOI badge in the README
+  .. image:: https://zenodo.org/badge/doi/10.5281/zenodo.#####.svg
+     :target: http://dx.doi.org/10.5281/zenodo.#####
+
 {{ "#" * (cookiecutter.title|length + cookiecutter.series|length + cookiecutter.serial_number|length + 2) }}
 {{ cookiecutter.series }}-{{ cookiecutter.serial_number }} {{ cookiecutter.title }}
 {{ "#" * (cookiecutter.title|length + cookiecutter.series|length + cookiecutter.serial_number|length + 2) }}
@@ -9,11 +18,6 @@ View this technote at {{ cookiecutter.url }} or see a preview of the current ver
 {% if cookiecutter.docushare_url|length > 0 %}
 An authoritative version of this document is also available in LSST's Docushare: {{ cookiecutter.docushare_url }}.
 {% endif %}
-
-..
-  Uncomment this section and modify the DOI strings to include a Zenodo DOI badge in the README
-  .. image:: https://zenodo.org/badge/doi/10.5281/zenodo.#####.svg
-     :target: http://dx.doi.org/10.5281/zenodo.#####
 
 Build this technical note
 =========================
