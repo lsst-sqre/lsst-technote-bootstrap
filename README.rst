@@ -61,31 +61,12 @@ Edit the metadata to correct any errors made in the cookiecutter prompts, or to 
 
 You can also edit the README.rst to give additional cues to readers/authors viewing the technote on GitHub.
 
-4. Write the Docs
+4. Push to GitHub
 -----------------
 
-Write the technote in ``index.rst``.
-The markup language of DM is `reStructuredText`_.
-We've written a page on writing reStructuredText for DM that may help you get started: http://developer.lsst.io/en/latest/docs/rst_styleguide.html
+The technote should be published to a new GitHub repo as early as possible, even before you've added content.
+Having the repo on GitHub effectively reserves your technote's serial number.
 
-To preview your technote, install python dependencies via
-
-.. code-block:: bash
-
-   pip install -r requirements.txt
-
-once, and run
-
-.. code-block:: bash
-
-   make html
-
-to generate the technote webpage locally at ``_build/html/index.html``.
-
-5. Push to GitHub
------------------
-
-The technote should be published on GitHub.
 Which organization you place the technote in depends on the document's series:
 
 - SQuaRE technical notes (SQR series) go in https://github.com/lsst-sqre.
@@ -98,6 +79,18 @@ Ensure that the ``github_namespace`` you provided at the ``cookiecutter`` prompt
 When you're creating the GitHub repository, make an empty project; you've already created the README, LICENSE and gitignore files locally.
 
 The repo's GitHub summary line should correspond to the technote's title and the homepage should be the URL of the published technote.
+
+5. Write the Docs
+-----------------
+
+Write the technote in the ``index.rst`` file.
+The markup language of DM is `reStructuredText`_.
+We've written a page on writing reStructuredText for DM that may help you get started: http://developer.lsst.io/en/latest/docs/rst_styleguide.html
+
+It's best to start writing content on a new branch, usually a `ticket branch <https://developer.lsst.io/processes/workflow.html#git-branching>`_.
+This way you can use a pull request to have your content reviewed before it's published at the main URL.
+
+The ``README.rst`` in your technote includes details on how to locally build the technote.
 
 6. Publish with LSST the Docs
 -----------------------------

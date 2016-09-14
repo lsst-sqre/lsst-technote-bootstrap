@@ -1,23 +1,23 @@
+.. image:: https://img.shields.io/badge/{{ cookiecutter.repo_name|replace("-", "--") }}-lsst.io-brightgreen.svg
+   :target: {{ cookiecutter.url }}
+.. image:: https://travis-ci.org/{{ cookiecutter.github_namespace }}.svg
+   :target: https://travis-ci.org/{{ cookiecutter.github_namespace }}
+..
+  Uncomment this section and modify the DOI strings to include a Zenodo DOI badge in the README
+  .. image:: https://zenodo.org/badge/doi/10.5281/zenodo.#####.svg
+     :target: http://dx.doi.org/10.5281/zenodo.#####
+
 {{ "#" * (cookiecutter.title|length + cookiecutter.series|length + cookiecutter.serial_number|length + 2) }}
 {{ cookiecutter.series }}-{{ cookiecutter.serial_number }} {{ cookiecutter.title }}
 {{ "#" * (cookiecutter.title|length + cookiecutter.series|length + cookiecutter.serial_number|length + 2) }}
 
 {{ cookiecutter.description }}
 
-View this technote at {{ cookiecutter.url }} or see a preview of the
-current version in `this repo`_
-
-.. _this repo: ./index.rst
+View this technote at {{ cookiecutter.url }} or see a preview of the current version in `this repo`_.
 
 {% if cookiecutter.docushare_url|length > 0 %}
-   An authoritative version of this document is also available in LSST's Docushare: {{ cookiecutter.docushare_url }}
-   {{ cookiecutter.docushare_url|length }}
+An authoritative version of this document is also available in LSST's Docushare: {{ cookiecutter.docushare_url }}.
 {% endif %}
-
-..
-  Uncomment this section and modify the DOI strings to include a Zenodo DOI badge in the README
-  .. image:: https://zenodo.org/badge/doi/10.5281/zenodo.#####.svg
-     :target: http://dx.doi.org/10.5281/zenodo.#####
 
 Build this technical note
 =========================
@@ -31,13 +31,18 @@ You can clone this repository and build the technote locally with `Sphinx`_
    pip install -r requirements.txt
    make html
 
+.. note::
+
+   In a Conda_ environment, ``pip install -r requirements.txt`` doesn't work as expected.
+   Instead, ``pip`` install the packages listed in ``requirements.txt`` individually.
+
 The built technote is located at ``_build/html/index.html``.
 
 Editing this technical note
 ===========================
 
 You can edit the ``index.rst`` file, which is a reStructuredText document.
-A good primer on reStructuredText is available at http://docs.lsst.codes/en/latest/development/docs/rst_styleguide.html
+The `DM reStructuredText Style Guide`_ is a good resource for how we write reStructuredText.
 
 Remember that images and other types of assets should be stored in the ``_static/`` directory of this repository.
 See ``_static/README.rst`` for more information.
@@ -58,3 +63,6 @@ Copyright {{ cookiecutter.copyright_year }} {{ cookiecutter.copyright_holder }}
 This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/.
 
 .. _Sphinx: http://sphinx-doc.org
+.. _DM reStructuredText Style Guide: https://developer.lsst.io/docs/rst_styleguide.html
+.. _this repo: ./index.rst
+.. _Conda: http://conda.pydata.org/docs/
