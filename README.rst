@@ -7,11 +7,7 @@ Write technotes that are native to the web
 
 ``lsst-technote-bootstrap`` is a template for LSST technical notes that are written in `reStructuredText`_, generated with `Sphinx`_, and deployed to the web with `LSST the Docs`_.
 
-For background on the DM technote platform, see `SQR-000 <http://sqr-000.lsst.io>`_.
-
-.. _reStructuredText: http://sphinx-doc.org/rest.html
-.. _Sphinx: http://sphinx-doc.org
-.. _LSST the Docs: http://sqr-006.lsst.io
+For background on the DM technote platform, see `SQR-000`_.
 
 Quick Start
 ===========
@@ -26,8 +22,6 @@ Install cookiecutter via:
 
    pip install cookiecutter
 
-.. _cookiecutter: http://cookiecutter.rtfd.org/
-
 2. Create a technote
 --------------------
 
@@ -40,8 +34,16 @@ Run this command (verbatim):
 
 (Alternatively you can ``git clone`` this repository and run cookiecutter directly on it: ``cookiecutter lsst-technote-bootstrap``).
 
+.. note::
+
+   If you're running cookiecutter_ with Python 3, you *might* get a ``RuntimeError``:
+
+      RuntimeError: Click will abort further execution because Python 3 was configured to use ASCII as encoding for the environment.  Either run this under Python 2 or consult http://click.pocoo.org/python3/ for mitigation steps.
+
+   See `Cookiecutter and Python 3 <#cookiecutter-and-python-3>`_ for a solution.
+
 Answer the prompts, and you'll have a brand new technote project.
-:ref:`The prompts are documented below <config-prompts>`.
+`The prompts are documented below <#configuration-prompts>`_.
 
 ``cd`` into the technote's directory and initialize git:
 
@@ -59,7 +61,7 @@ We maintain technote metadata (such as authors, title, etc.) in the ``metadata.y
 
 Edit the metadata to correct any errors made in the cookiecutter prompts, or to add additional authors.
 
-You can also edit the README.rst to give additional cues to readers/authors viewing the technote on GitHub.
+You can also edit the ``README.rst`` to give additional cues to readers/authors viewing the technote on GitHub.
 
 4. Push to GitHub
 -----------------
@@ -159,8 +161,6 @@ When you create a GitHub Release for Zenodo, it's good practice to publish that 
    
    c. Re-submit the deposition. Only the metadata will be updated; the DOI will remain the same.
 
-.. _config-prompts:
-
 Configuration Prompts
 =====================
 
@@ -189,11 +189,35 @@ This section describes the content expected by the prompts when running `cookiec
 
 Note that errors when entering `cookiecutter`_ prompts can be easily fixed by editing the ``index.rst``, ``README.rst`` and ``metadata.yaml`` files in the generated technote project.
 
+
+Cookiecutter and Python 3
+=========================
+
+Depending on how your shell is set up, you may get this error when running cookiecutter_ under Python 3:
+
+    RuntimeError: Click will abort further execution because Python 3 was configured to use ASCII as encoding for the environment.  Either run this under Python 2 or consult http://click.pocoo.org/python3/ for mitigation steps.
+
+To solve this, you need to set your shell's *locale* to use UTF-8.
+Type these lines into your shell:
+
+.. code-block:: bash
+
+   export LC_ALL=en_US.utf-8
+   export LANG=en_US.utf-8
+
+*This will work on macOS. Linux distributions may be different (try C.UTF-8).*
+
+After the locale is set, re-try the cookiecutter_ command.
+
 ****
 
 Copyright 2015-2016 AURA/LSST
 
 `lsst-technote-bootstrap` is open source (MIT license).
 
-
+.. _SQR-000: https://sqr-000.lsst.io
+.. _`LSST the Docs`: https://sqr-006.lsst.io
 .. _Zenodo: http://zenodo.org
+.. _reStructuredText: http://sphinx-doc.org/rest.html
+.. _Sphinx: http://sphinx-doc.org
+.. _cookiecutter: http://cookiecutter.rtfd.org/
