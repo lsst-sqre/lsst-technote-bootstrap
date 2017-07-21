@@ -211,7 +211,7 @@ After the locale is set, re-try the cookiecutter_ command.
 
 ****
 
-Copyright 2015-2016 AURA/LSST
+Copyright 2015-2017 Association of Universities for Research in Astronomy, Inc.
 
 `lsst-technote-bootstrap` is open source (MIT license).
 
