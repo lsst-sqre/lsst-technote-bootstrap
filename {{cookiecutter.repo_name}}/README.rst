@@ -7,22 +7,29 @@
   .. image:: https://zenodo.org/badge/doi/10.5281/zenodo.#####.svg
      :target: http://dx.doi.org/10.5281/zenodo.#####
 
-{{ "#" * (cookiecutter.title|length + cookiecutter.series|length + cookiecutter.serial_number|length + 2) }}
-{{ cookiecutter.series }}-{{ cookiecutter.serial_number }} {{ cookiecutter.title }}
-{{ "#" * (cookiecutter.title|length + cookiecutter.series|length + cookiecutter.serial_number|length + 2) }}
+{{ "#" * cookiecutter.title|length }}
+{{ cookiecutter.title }}
+{{ "#" * cookiecutter.title|length }}
+
+{{ cookiecutter.series }}-{{ cookiecutter.serial_number }}
+{{ "=" * (cookiecutter.series|length + cookiecutter.serial_number|length + 1) }}
 
 {{ cookiecutter.description }}
 
-View this technote at {{ cookiecutter.url }} or see a preview of the current version in `this repo`_.
+**Links:**
 
+- Publication URL: {{ cookiecutter.url }}
+- Alternative editions: {{ cookiecutter.url }}/v
+- GitHub repository: https://github.com/{{ cookiecutter.github_namespace }}
+- Build system: https://travis-ci.org/{{ cookiecutter.github_namespace }}
 {% if cookiecutter.docushare_url|length > 0 %}
-An authoritative version of this document is also available in LSST's Docushare: {{ cookiecutter.docushare_url }}.
+- LSST Docushare: {{ cookiecutter.docushare_url }}.
 {% endif %}
 
 Build this technical note
 =========================
 
-You can clone this repository and build the technote locally with `Sphinx`_
+You can clone this repository and build the technote locally with `Sphinx`_:
 
 .. code-block:: bash
 
