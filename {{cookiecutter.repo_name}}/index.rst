@@ -27,7 +27,6 @@
 
   .. figure:: /_static/filename.ext
      :name: fig-label
-     :target: http://target.link/url
 
      Caption text.
 
