@@ -63,6 +63,16 @@ This technote's metadata is maintained in ``metadata.yaml``.
 In this metadata you can edit the technote's title, authors, publication date, etc..
 ``metadata.yaml`` is self-documenting with inline comments.
 
+Using the bibliographies
+========================
+
+The bibliography files in ``lsstbib/`` are copies from `lsst-texmf`_.
+You can update them to the current `lsst-texmf`_ versions with::
+
+   make refresh-bib
+
+Add new bibliography items to the ``local.bib`` file in the root directory (and later add them to `lsst-texmf`_).
+
 ****
 
 Copyright {{ cookiecutter.copyright_year }} {{ cookiecutter.copyright_holder }}
@@ -73,3 +83,4 @@ This work is licensed under the Creative Commons Attribution 4.0 International L
 .. _DM reStructuredText Style Guide: https://developer.lsst.io/docs/rst_styleguide.html
 .. _this repo: ./index.rst
 .. _Conda: http://conda.pydata.org/docs/
+.. _lsst-texmf: https://lsst-texmf.lsst.io
