@@ -27,7 +27,6 @@
 
   .. figure:: /_static/filename.ext
      :name: fig-label
-     :target: http://target.link/url
 
      Caption text.
 
@@ -50,3 +49,13 @@
    **This technote is not yet published.**
 
    {{ cookiecutter.description }}
+
+.. Add content here.
+
+.. .. rubric:: References
+
+.. Make in-text citations with: :cite:`bibkey`.
+
+.. .. bibliography:: local.bib lsstbib/books.bib lsstbib/lsst.bib lsstbib/lsst-dm.bib lsstbib/refs.bib lsstbib/refs_ads.bib
+..    :encoding: latex+latin
+..    :style: lsst_aa
