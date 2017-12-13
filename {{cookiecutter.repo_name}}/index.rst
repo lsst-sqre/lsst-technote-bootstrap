@@ -42,7 +42,7 @@
 
 .. sectnum::
 
-.. Add content below. Do not include the document title.
+.. TODO: Delete the note below before merging new content to the master branch.
 
 .. note::
 
@@ -51,6 +51,7 @@
    {{ cookiecutter.description }}
 
 .. Add content here.
+.. Do not include the document title (it's automatically added from metadata.yaml).
 
 .. .. rubric:: References
 
