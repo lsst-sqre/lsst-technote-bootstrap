@@ -80,7 +80,7 @@ Copyright {{ cookiecutter.copyright_year }} {{ cookiecutter.copyright_holder }}
 This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/.
 
 .. _Sphinx: http://sphinx-doc.org
-.. _DM reStructuredText Style Guide: https://developer.lsst.io/docs/rst_styleguide.html
+.. _DM reStructuredText Style Guide: https://developer.lsst.io/restructuredtext/style.html
 .. _this repo: ./index.rst
 .. _Conda: http://conda.pydata.org/docs/
 .. _lsst-texmf: https://lsst-texmf.lsst.io
