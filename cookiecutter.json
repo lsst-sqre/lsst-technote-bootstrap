@@ -16,7 +16,7 @@
     "docushare_url": "",
     "url": "https://{{ cookiecutter.series.lower() }}-{{ cookiecutter.serial_number }}.lsst.io",
     "description": "A short description of this document",
-    "copyright_year": "2016",
+    "copyright_year": "2018",
     "copyright_holder": "AURA/LSST",
     "_copy_without_render": [
         "*.bib"
