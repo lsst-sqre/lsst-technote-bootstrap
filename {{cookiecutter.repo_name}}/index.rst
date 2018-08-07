@@ -1,7 +1,7 @@
 ..
   Technote content.
 
-  See https://developer.lsst.io/docs/rst_styleguide.html
+  See https://developer.lsst.io/restructuredtext/style.html
   for a guide to reStructuredText writing.
 
   Do not put the title, authors or other metadata in this document;
