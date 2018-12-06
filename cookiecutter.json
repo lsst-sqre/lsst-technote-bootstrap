@@ -3,7 +3,7 @@
     "series": ["SQR",
                "DMTN",
                "SMTN",
-               "LDM",
+               "SITCOMTN",
                "TEST"],
     "serial_number": "000",
     "title": "Document Title",
@@ -11,14 +11,22 @@
     "github_org": ["lsst-sqre",
                    "lsst-dm",
                    "lsst-sims",
-                   "lsst"],
+                   "lsst-sitcom"],
     "github_namespace": "{{ cookiecutter.github_org }}/{{ cookiecutter.repo_name }}",
     "docushare_url": "",
     "url": "https://{{ cookiecutter.series.lower() }}-{{ cookiecutter.serial_number }}.lsst.io",
     "description": "A short description of this document",
-    "copyright_year": "2018",
-    "copyright_holder": "AURA/LSST",
+    "copyright_year": "{% now 'utc', '%Y' %}",
+    "copyright_holder": [
+      "Association of Universities for Research in Astronomy",
+      "California Institute of Technology",
+      "The Board of Trustees of the Leland Stanford Junior University, through SLAC National Accelerator Laboratory",
+      "The Trustees of Princeton University",
+      "University of Illinois Board of Trustees",
+      "University of Washington"
+    ],
     "_copy_without_render": [
         "*.bib"
-    ]
+    ],
+    "_extensions": ["jinja2_time.TimeExtension"]
 }
