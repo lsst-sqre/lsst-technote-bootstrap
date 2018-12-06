@@ -16,7 +16,7 @@
     "docushare_url": "",
     "url": "https://{{ cookiecutter.series.lower() }}-{{ cookiecutter.serial_number }}.lsst.io",
     "description": "A short description of this document",
-    "copyright_year": "2018",
+    "copyright_year": "{% now 'utc', '%Y' %}",
     "copyright_holder": [
       "Association of Universities for Research in Astronomy",
       "California Institute of Technology",
@@ -27,5 +27,6 @@
     ],
     "_copy_without_render": [
         "*.bib"
-    ]
+    ],
+    "_extensions": ["jinja2_time.TimeExtension"]
 }
